@@ -5,19 +5,18 @@ echo "[=============================]"
 docker compose up -d
 printf "\n\n\n"
 
+sleep 2
+echo "[===============================]"
+echo "[ Showing the container running ]"
+echo "[===============================]"
+docker ps
+printf "\n\n\n"
 
 sleep 2
 echo "[===========================================]"
 echo "[ Making a request to application with curl ]"
 echo "[===========================================]"
 curl http://127.0.0.1/
-printf "\n\n\n"
-
-sleep 2
-echo "[===============================]"
-echo "[ Showing the container running ]"
-echo "[===============================]"
-docker ps
 printf "\n\n\n"
 
 sleep 2
